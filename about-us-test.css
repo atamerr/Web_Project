@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #191919;
+  color: #fff;
+  padding: 20px;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 15px 50px;
+  display: flex;
+  justify-content: flex-start; /* Align the content to the left */
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #E9C46A;
+  margin-right: 30px; /* Add some space between the logo and links */
+}
+
+nav {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  position: relative;
+  top: 7.5px;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.5s;
+}
+
+nav ul li a:hover {
+  color: #F4A261; /* Hover color matches the theme */
+}
+
+.about {
+  width: 100%;
+  margin-top: 50px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  text-align: left;
+  box-sizing: border-box; /* Ensures padding is included in the total width */
+}
+
+.about h1 {
+  font-size: 4rem;
+  color: #E9C46A;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.about h1::after {
+  content: '';
+  position: absolute;
+  width: 100%; /* Full width of the title */
+  height: 2px;
+  background-color: #E9C46A;
+  bottom: -5px;
+  left: 0;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.about-content strong {
+  font-weight: 700;
+  color: #F4A261;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #E76F51;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  transition: background 0.5s;
+  background: #D6453A;
+
+}
+
+.hidden {
+  display: none;
+}
