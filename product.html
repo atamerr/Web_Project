@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+    
+</head>
+<body>
+     <div id="container"></div>
+    <button id="addToCartBtn">Add to Cart</button>
+    <button id="topButton">↑</button>
+
+    <div id="page">
+        <div id="cartContainer"></div>
+        <div id="pagediv">
+            <button id="backbtn">Back to Shopping</button>
+            <button id="checkoutBtn" class="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <div id="checkoutForm" style="display: none;">
+        <h2>Checkout</h2>
+        <form id="paymentForm">
+            <div>
+                <input type="radio" id="radioA" name="payment" value="credit" checked>
+                <label for="radioA">Credit Card</label>
+                <input type="radio" id="radioB" name="payment" value="cash">
+                <label for="radioB">Cash on Delivery</label>
+            </div>
+
+            <div id="visaDetails">
+                <h3>Credit Card Details</h3>
+                <input type="text" placeholder="Card Number" required>
+                <input type="text" placeholder="Expiry Date" required>
+                <input type="text" placeholder="CVV" required>
+                <input type="text" placeholder="Cardholder Name" required>
+            </div>
+
+            <div id="cash-details">
+                <h3>Cash on Delivery</h3>
+                <p>Pay when you receive your order</p>
+            </div>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+    <script src="product.js"></script>
+</body>
+</html>
