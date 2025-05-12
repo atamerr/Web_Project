@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= pageTitle || 'Login' %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/css/Login.css" />
+</head>
+<body>
+
+  <%- include('/partials/header.ejs') %>
+
+  <div class="login-container">
+    <div class="login-box">
+      <h1 class="login-title">Login</h1>
+
+      <div class="input-field">
+        <i class="fas fa-user icon"></i>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your Name" />
+      </div>
+
+      <div class="input-field">
+        <i class="fas fa-lock icon"></i>
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" />
+        <i class="fas fa-eye-slash toggle-password"></i>
+      </div>
+
+      <button class="login-button">
+        <span class="button-text">Login</span>
+        <i class="fas fa-spinner loading-icon"></i>
+      </button>
+
+      <p class="signup-text">Don't have an account? <a href="/signin">Sign Up</a></p>
+    </div>
+
+    <div class="welcome-section">
+      <h1 class="welcome-title">WELCOME BACK!</h1>
+    </div>
+  </div>
+
+  <script src="/js/Login.js"></script>
+</body>
+</html>

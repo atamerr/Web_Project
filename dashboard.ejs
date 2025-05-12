@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><%= pageTitle || 'Dashboard' %></title>
+  <link rel="stylesheet" href="/css/dashboard.css" />
+</head>
+<body>
+  <%- include('/partials/header.ejs') %>
+
+  <section class="dashboard">
+    <h1>Welcome to the Dashboard</h1>
+    <p>Manage your products and business operations easily.</p>
+
+    <a href="/products">
+      <button class="modern-btn">View Products</button>
+    </a>
+    <a href="/settings">
+      <button class="settings-btn">Settings</button>
+    </a>
+  </section>
+
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
